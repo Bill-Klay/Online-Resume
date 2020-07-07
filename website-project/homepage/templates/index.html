@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% load static %}
+<meta charset="utf-8">
+<title>Bilal Khan</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{% static 'stylesheets/animate.css' %}">
+<link rel="stylesheet" href="{% static 'stylesheets/layout.css' %}">
+<link rel="stylesheet" href="{% static 'stylesheets/responsive.css' %}">
+<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'image_gallery/css/jquery.fancybox.css' %}">
+<link rel="stylesheet" href="{% static 'image_gallery/css/styles.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- Vue.js -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+<div id="app">
+<!-- Start  Mobile & Tab Header-->
+    <div class="rzm_mobile_header col-sm-12 col-xs-12 hidden-lg hidden-md">
+        <div class="mob_nav  navbar navbar-inverse navbar-fixed-top" id="slide-nav">
+        	<div class="navbar-header">
+				<a class="navbar-toggle"></a>
+            </div>
+            <div id="slidemenu" class="navbar-default navbar-inverse">
+                <ul class="nav navbar-nav primary">
+                    <li class="first"><a href="#home">About</a></li>
+                    <li><a href="#portfolio">Notable Projects</li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#electives">Electives</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+<!-- End  Mobile & Tab Header-->
+<!-- Start outside-header -->
+<div class="rzm_outside-header" id="home">
+  
+</div>
+<!-- End outside-header -->
+<!-- Start Outside Main -->
+
+<div class="outside-main" id="page-content">
+  
+  <!-- Start Main Container -->
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-12 rzm_profile_nav">
+            <div class="sticky">
+           <div class="logo">
+                <transition name="fade" appear>
+                    <img src="{% static 'img/Me.jpg' %}" alt="profile_photo" class="img-responsive img-circle">
+                </transition>
+           </div>
+             <!-- Start primary navigation -->
+          <div class="rzm_main_menu hidden-sm hidden-xs">
+              <ul class="primary">
+                <li class="first"><a href="#home">About</a></li>
+                <li><a href="#portfolio">Notable Projects</li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#electives">Electives</a></li>
+              </ul>
+              <div class="social_nav">
+                <!-- <a href="https://www.facebook.com/mohommadbilal.khan" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> -->
+                <a href="https://www.linkedin.com/in/bilalkhan29" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.github.com/Bill-Klay" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.quora.com/Muhammad-Bilal-Khan-24" target="_blank"><i class="fa fa-quora" aria-hidden="true"></i></a>
+                <a href="mailto:bilal.khan2998@outlook.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+               </div>
+          </div>
+          <!-- End Primary navigation -->
+        </div>
+    
+        </div>
+    
+    <div class="clearfix"></div>
+    <!-- Start Profile Section -->
+    <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 first profile rez_about">
+      <div class="rez_top_title">
+        <transition name="bounce" appear>
+            <h1 style="color: lightcyan;">Hi, I'm Muhammmad Bilal Khan</h1>
+        </transition>
+        <transition name="fade" appear>
+            <p>An avid Computer Scientist who likes to automate</p>
+        </transition>
+      </div>
+      <transition name="slide-fade" appear>
+        <h1 class="title">About Me</h1>
+      </transition>
+     
+      <!-- Start About section -->
+      <div class="col-md-12 col-sm-12 col-xs-12  omega  about">
+        <p class="about_info" @mouseover="changeAllColor">Good hands on <b v-bind:style="{ color: computedColor1 }" @mouseover="changeColor1">Time Series Analysis</b>. Know the way, in and out
+            through a <b v-bind:style="{ color: computedColor }" @mouseover="changeColor">Linux system</b>. Worked on Data Science, Web Dev and
+            <b v-bind:style="{ color: computedColor2 }" @mouseover="changeColor2">Neural Networks</b>. Software Engineering and Information
+            System Security are a keen area of interest. <b v-bind:style="{ color: computedColor2 }" @mouseover="changeColor2">I like Scripting</b>, both
+            Web and OS based, try to automate any task I can. Always
+            breaking and repairing my Linux. Love for Open Source and
+            GitHub/GitBash. I'm a <b v-bind:style="{ color: computedColor }" @mouseover="changeColor">dedicated volunteer</b> always Looking for an opportunity to volunteer. 
+            <b v-bind:style="{ color: computedColor1 }" @mouseover="changeColor1">Never say ’no’</b> to anyone and always give back. Be <b v-bind:style="{ color: computedColor }" @mouseover="changeColor">captivated and productive</b>, among a huge list of 
+            skills FAST has taught me is to be always doing something and be able to say <b v-bind:style="{ color: computedColor1 }" @mouseover="changeColor1">“Yea! I did that”</b>.
+        </p>
+      </div>
+
+    <h1 class="title">Education</h1>
+    
+    <div class="card isotopeSelector" @mouseover="hover = true" @mouseleave="hover = false" :class="{ changeColor: hover}">
+        <transition name="slide-fade" appear>
+            <img src="{% static 'img/nuces.jpeg' %}" alt="Avatar" style="width:30%; float: right;":class="{ changeColor: hover}">
+        </transition>
+        <div class="container">
+          <h4><b>National University of Computer & Emerging Sciences</b></h4>
+          <p>Bachelors in Computer Science Science</p>
+          <p>Computer Science</p>
+        </div>
+    </div> 
+    <br><br>
+    <div class="card isotopeSelector" @mouseover="hover1 = true" @mouseleave="hover1 = false" :class="{ changeColor: hover1}">
+        <transition name="slide-fade" appear>
+            <img src="{% static 'img/college.jpeg' %}" alt="Avatar" style="width:30%; float: right;" :class="{ changeColor: hover1}">
+        </transition>
+        <div class="container">
+          <h4><b>DJ Sindh Government Science College</b></h4>
+          <p>Faculty of Science</p>
+          <p>FSc</p>
+        </div>
+    </div>
+      
+      <!-- End About -->
+      
+      <div class="clear">
+      </div>
+      
+    </section>
+    <!-- End About section -->
+   
+    <!-- isotopeSelector -->
+    <!-- Start Portfolio section -->
+    <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 rzm_portfolio" id="portfolio">
+        <transition name="slide-fade" appear>
+            <h1 class="title">Noteable Projects</h1>
+        </transition>
+        <div class="container" style="margin-left: 15%;">
+            <div class="row">
+                {% for job in jobs.all %}
+                <div class="card" style="width:50%;" @mouseover="hover = true" @mouseleave="hover = false" :class="{ changeColor: hover}">
+                    <img class="card-img-top" src="{{job.image.url}}" alt="Card image" style="width: 100%; height: 300px;">
+                    <div class="card-body">
+                        <h4 class="card-title box">{{job.title}}</h4>
+                        <template v-if="show">
+                            <transition name="fade">
+                                <p class="card-text box">{{job.summary}}</p>
+                            </transition>
+                        </template>
+                        <template v-else>
+                            <transition name="fade">
+                                <p class="card-text box">{{job.complete}}</p>
+                            </transition>
+                        </template>
+                    </div>
+                </div>
+                <a href="{{job.link}}" class="btn btn-primary streched-link col-md-2" target="_blank" style="margin-top: 10px;">Explore Link</a>
+                <button class="btn btn-warning streched-link col-md-2" @click="extend" style="margin-top: 10px; margin-left: 5px;">Show More</button>
+                <br><br><br>
+                {% endfor %}
+            </div>
+        </div>
+    </section>  
+ <!-- End Profile Section--> 
+
+   <!-- Start Experience section -->
+    <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 rzm_experience" id="experience">
+        <transition name="slide-fade" appear>
+            <h1 class="title">Volunteering and Awards</h1>
+        </transition>
+      <div id="rzm_timeline">
+            
+        <div class="row rzm_timeline-movement">
+        
+            <div class="rzm_timeline-badge active_box">    
+            </div>
+        
+        
+            <div class="col-sm-6 col-xs-12 rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel credits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <li>Sept 2017 - Sept 2019 </li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-6 col-xs-12  rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel debits">
+                            <ul class="rzm_timeline-panel-ul active">
+                                <transition name="bounce" appear>
+                                    <li><span class="rzm_importo">The Literary Club</span></li>
+                                </transition>
+                                <li><span class="rzm_causale">Head of the Public Speaking Club </span> </li>
+                                <li><span class="rzm_causale">Hosted multiple events </span> </li>
+                                <li><span class="rzm_causale">Videographer </span> </li>
+                                <li><span class="rzm_causale">Content Writing </span> </li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--due -->
+        
+        <div class="row rzm_timeline-movement">
+        
+            <div class="rzm_timeline-badge ">    
+            </div>
+        
+        
+            <div class="col-sm-6 col-xs-12 rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel credits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <li>Sept 2018 - Sept 2019 </li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-6  col-xs-12 rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel debits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <transition name="bounce" appear>
+                                    <li><span class="importo">The Web Masters</span></li>
+                                </transition>
+                                <li><span class="rzm_causale">Co-Head Back-end development </span> </li>
+                                </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Expeeience Item two-->
+<div class="row rzm_timeline-movement">
+        
+            <div class="rzm_timeline-badge">    
+            </div>
+        
+        
+            <div class="col-sm-6 col-xs-12 rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel credits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <li>Aug 2018- Aug 2019 </li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-6  col-xs-12 rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel debits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <transition name="bounce" appear>
+                                    <li><span class="importo">Mukhlis Fertigo</span></li>
+                                </transition>
+                                <li><span class="rzm_causale">Head IT Team </span> </li>
+                                <li><span class="rzm_causale">Web Developer </span> </li>
+                               
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            
+  </div>
+<!--expereince Item three-->
+<div class="row rzm_timeline-movement">
+        
+            <div class="rzm_timeline-badge">    
+            </div>
+        
+        
+            <div class="col-sm-6  rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel credits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <li>Jun 2017 - Aug 2017 </li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-6  rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel debits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <transition name="bounce" appear>
+                                    <li><span class="importo">Behbud Association</span></li>
+                                </transition>
+                                <li><span class="rzm_causale">Computer Science Intern</span> </li>
+                               
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+<!--expereince Item four-->
+    
+        </div>
+		<div class="rzm_button">
+        	<a href="{% static 'CV.pdf' %}" target="_blank" class="btn btn-sm btn-default"><i class="fa fa-download" aria-hidden="true"></i>Resume</a>
+        </div>
+    </section>
+   <!-- End Experience section -->
+   
+   <!-- Start Skill section -->
+    <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3" id="skill">
+    	<transition name="slide-fade" appear>
+            <h1 class="title">Computer Science Skills</h1>
+        </transition>
+        <div class="cardShort">
+            <div class="container">
+              <h4><b>Scientific Computing</b></h4>
+              <p>Julia Programming Language</p>
+              <p>PyTorch</p>
+            </div>
+        </div> 
+        <br>
+        <div class="cardShort">
+            <div class="container">
+              <h4><b>Scripting</b></h4>
+              <p>HTML, CSS, Django, Vue.js, Bash, BootStrap</p>
+              <p>LaTeX, PHP, Flask, RESTful API, Docker</p>
+            </div>
+        </div> 
+        <br>
+        <div class="cardShort">
+            <div class="container">
+              <h4><b>Programming</b></h4>
+              <p>Python, Java, C#</C></p>
+              <p>C++, C</p>
+            </div>
+        </div> 
+        <br>
+        <div class="cardShort">
+            <div class="container">
+              <h4><b>Databases</b></h4>
+              <p>MySQL, Oracle, MongoDB</p>
+              <p>PostgreSQL Workbench</p>
+            </div>
+        </div>
+        <br>
+        <div class="cardShort">
+            <div class="container">
+              <h4><b>System Security</b></h4>
+              <p>Parrot Security OS</p>
+            </div>
+        </div> 
+        <br>
+        <div class="cardShort">
+            <div class="container">
+              <h4><b>Design and Editing</b></h4>
+              <p>Photoshop, GIMP, Filmora</p>
+              <p>KDenlive</p>
+            </div>
+        </div>
+        <br>
+        <div class="cardShort">
+            <div class="container">
+              <h4><b>Game Programming</b></h4>
+              <p>Unity Game Engine</p>
+            </div>
+        </div> 
+        <div class="rzm_client_img">
+        	<img src="{% static 'img/django.png' %}" alt="" style="width: 15%;">
+            <img src="{% static 'img/julia.png' %}" alt="" style="width: 20%;">
+            <img src="{% static 'img/python.png' %}" alt="" style="width: 25%;">
+            <img src="{% static 'img/vue.png' %}" alt="" style="width: 30%;">
+            <img src="{% static 'img/thought.png' %}" alt="" style="width: 25%;">
+            <img src="{% static 'img/pytorch.png' %}" alt="" style="width: 40%;">
+            <img src="{% static 'img/unity.png' %}" alt="" style="width: 20%;">
+        </div>
+        
+    </section>
+   <!-- End skill section -->
+
+   <!-- Electives Section -->
+   <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3" id="electives">
+        <h1 class="title">Electives I've Studied</h1>
+        <div class="Row">
+            <div class="flip-card Column">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="{% static 'img/business communication.jpeg' %}" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Business Communication</h1>
+                  </div>
+                </div>
+            </div>
+            <div class="flip-card Column">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="{% static 'img/arabic language.jpeg' %}" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Arabic Language</h1>
+                  </div>
+                </div>
+            </div>
+            <div class="flip-card Column">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="{% static 'img/business communication.jpeg' %}" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Communication for Managers</h1>
+                  </div>
+                </div>
+            </div> 
+        </div> 
+        <div class="Row" style="margin-top: 15%;">
+            <div class="flip-card Column">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="{% static 'img/data science.jpeg' %}" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Data Sciences</h1>
+                  </div>
+                </div>
+            </div>
+            <div class="flip-card Column">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="{% static 'img/research methods.jpeg' %}" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Research Methods</h1>
+                  </div>
+                </div>
+            </div>
+            <div class="flip-card Column">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="{% static 'img/information retrieval.jpeg' %}" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Information Retrieval</h1>
+                  </div>
+                </div>
+            </div> 
+        </div> 
+        <div class="Row" style="margin-top: 15%;">
+            <div class="flip-card Column">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="{% static 'img/probability.jpeg' %}" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Probabilistic Programming</h1>
+                  </div>
+                </div>
+            </div>
+            <div class="flip-card Column">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="{% static 'img/computing.jpeg' %}" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Computing Methods</h1>
+                  </div>
+                </div>
+            </div>
+            <div class="flip-card Column">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="{% static 'img/deep learning.jpeg' %}" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Deep Learning for Perception</h1>
+                  </div>
+                </div>
+            </div> 
+        </div> 
+        <div class="flip-card" style="margin-top: 15%;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="{% static 'img/blockchain.jpeg' %}" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                <h1>Blockchain and Cryptocurrency</h1>
+                </div>
+            </div>
+        </div>
+   </section>
+   
+   <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 rzm_contact">
+   		<h1 class="title"></h1>
+   </section>
+  
+ </div>
+ </div><!-- End Main Container-->
+ </div> <!-- End Outside Main-->
+ 
+  <!-- Start footer section -->
+   		<section class="col-md-12 col-sm-12 col-xs-12 rzm_footer container-fluid">
+        	<div class="container">
+                <h4>My virtual forms</h4>
+                <div class="rez_footer_social">
+                
+                    <!-- <a href="https://www.facebook.com/mohammadbilal.khan" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> -->
+                    <a href="https://www.linkedin.com/in/bilalkhan29" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.github.com/Bill-Klay" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.quora.com/Muhammad-Bilal-Khan-24" target="_blank"><i class="fa fa-quora" aria-hidden="true"></i></a>
+                    <a href="mailto:bilal.khan2998@outlook.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                   
+                </div>
+                <p>© Bilal Khan 2020</p>
+            </div>
+        </section>
+   <!-- End footer section -->
+</div>
+<!-- JS
+	================================================== --> 
+
+<script src="{% static 'javascripts/jquery.tipsy.js' %}"></script> 
+
+<script src="{% static 'javascripts/jquery.scrollTo-min.js' %}" ></script> 
+<script src="{% static 'javascripts/jquery.localscroll-min.js' %}" ></script> 
+<script src="{% static 'javascripts/jquery.easing.1.3.js' %}"></script> 
+<script src="{% static 'javascripts/script.js' %}"></script>
+<!-- Vue.js -->
+<script src="{% static 'javascripts/main.js' %}"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<!-- End Document
+================================================== -->
+</body>
+
+
+</html>
