@@ -74,17 +74,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'website.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'resume',
-        'HOST': 'db',
-        'PORT': 27017,
-        'DOMAIN': '0.0.0.0',
+        'NAME': 'resume'
     }
 }
 

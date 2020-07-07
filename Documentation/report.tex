@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=red,
+	urlcolor=magenta,
+}
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north west,yshift=-20pt,xshift=60pt]%
+	at (current page.north west)
+	{\includegraphics[scale=0.5]{djangoVue.png}};
+\end{tikzpicture}
+
+\begin{flushright}
+	\Huge{\textbf{Online Resume}} \\
+	\Large{Using Django and Vue.js} \\
+	\emph{\large{\today}} \\
+\end{flushright}
+
+\begin{flushleft}
+	\large{\textbf{Prepared by: } Muhammad Bilal Khan} \\
+\end{flushleft}
+
+\vspace{-0.8cm}
+
+\begin{center}
+	{\rule{475pt}{1pt}}
+\end{center}
+	
+\begin{center}
+	Amazon Web Service: \href{http://ec2-52-23-221-163.compute-1.amazonaws.com:5000/}{http://ec2-52-23-221-163.compute-1.amazonaws.com:5000/} \\
+	Heroku: \\
+\end{center}
+
+\section{Introduction}
+This report was establish for the purpose of deployment of an online website implemented using \href{https://www.djangoproject.com/}{Django} as the backend engine and \href{https://vuejs.org/}{Vue.js} as the frontend for manipulating the DOM basically.
+The report discusses the layout of the project folder and describes the content held within.
+Overviewing and bit about which file implements what and how.
+The \textbf{links} stated at the start of the documents links to some of the important aspects of the task.
+\textit{Amazon Web Service} holds the code made live running on a virtual machine.
+\textit{Heroku} has the django app deployed on a Python droplet.
+Please visit my \textit{Git Hub} for viewing and inspecting the complete code.
+
+\section{File Structure}
+This 
+\end{document}
