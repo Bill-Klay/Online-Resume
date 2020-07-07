@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.6.15)  7 JUL 2020 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.6.15)  7 JUL 2020 22:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -547,30 +547,30 @@ Overfull \hbox (5.24498pt too wide) in paragraph at lines 35--36
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./djangoVue.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 72.
+(Font)              <10.95> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 72.
+(Font)              <8> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 72.
+(Font)              <6> on input line 76.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82 \end{document}
+l.86 \end{document}
                     [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 4DD2010F7889397A4225660A45BF2204;141.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
+(rerunfilecheck)             Checksum: 4F88428048B1F050F88BC8AE3A052F1B;136.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
  15483 strings out of 480476
  300018 string characters out of 5902080
- 537811 words of memory out of 5000000
+ 538811 words of memory out of 5000000
  31211 multiletter control sequences out of 15000+600000
  538241 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -582,7 +582,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on report.pdf (2 pages, 104272 bytes).
+Output written on report.pdf (2 pages, 104678 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream

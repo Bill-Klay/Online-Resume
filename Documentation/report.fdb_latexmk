@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1594133711 "/home/bilal/Desktop/django-vue/Documentation/report.tex" "/home/bilal/Desktop/django-vue/Documentation/report.pdf" "report" 1594133712
+["pdflatex"] 1594141862 "/home/bilal/Desktop/django-vue/Documentation/report.tex" "/home/bilal/Desktop/django-vue/Documentation/report.pdf" "report" 1594141863
   "/etc/texmf/web2c/texmf.cnf" 1591289161 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/bilal/Desktop/django-vue/Documentation/report.aux" 1594133711 1029 6eb3a689101eb7759ce3867827eff8bc ""
-  "/home/bilal/Desktop/django-vue/Documentation/report.tex" 1594133565 4334 441f4c6532b9148c5178803b8ef66fa2 ""
+  "/home/bilal/Desktop/django-vue/Documentation/report.aux" 1594141863 1024 21e1fafdf61a23475f5f008f4011c7e3 ""
+  "/home/bilal/Desktop/django-vue/Documentation/report.tex" 1594141861 4995 61eaa03dc2bd66b23ec0c210235f85a4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -136,13 +136,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1591610508 4851814 6fe94ea498687bb1f6d55edba89a3ca3 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1592214934 2437034 572ec68908b19cf95b19bc7e658559ae ""
   "djangoVue.png" 1594133710 14442 8a6491ddcc5bb742438693ee6337e3bd ""
-  "report.aux" 1594133711 1029 6eb3a689101eb7759ce3867827eff8bc "pdflatex"
-  "report.out" 1594133711 141 4dd2010f7889397a4225660a45bf2204 "pdflatex"
-  "report.tex" 1594133565 4334 441f4c6532b9148c5178803b8ef66fa2 ""
+  "report.aux" 1594141863 1024 21e1fafdf61a23475f5f008f4011c7e3 "pdflatex"
+  "report.out" 1594141863 136 4f88428048b1f050f88bc8ae3a052f1b "pdflatex"
+  "report.tex" 1594141861 4995 61eaa03dc2bd66b23ec0c210235f85a4 ""
   (generated)
-  "report.log"
-  "report.pdf"
-  "report.aux"
-  "report.out"
   "/home/bilal/Desktop/django-vue/Documentation/report.log"
+  "report.aux"
+  "report.log"
   "/home/bilal/Desktop/django-vue/Documentation/report.pdf"
+  "report.pdf"
+  "report.out"

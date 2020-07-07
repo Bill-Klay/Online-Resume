@@ -41,7 +41,7 @@
 	% Heroku: \\
 \end{flushright}
 
-\section{Introduction}
+\section{Studies}
 This report was establish for the purpose of deployment of an online website implemented using \href{https://www.djangoproject.com/}{Django} as the backend engine and \href{https://vuejs.org/}{Vue.js} as the frontend for manipulating the DOM plus \textbf{MongoDB} for the database.
 The report discusses the layout of the project folder and describes the content held within.
 Overviewing and bit about which file implements what and how.
@@ -65,6 +65,10 @@ It also holds the \textit{index.html} file within the \textbf{templates} folder 
 \textbf{Media} is the folder for the Django ORM to store files and database structure for accessability, currently it only holds images, hence just a sinel \textbf{images} folder within. 
 \textbf{Static} folder the location for Django to serve static files from. 
 CSS, JavaScript, images and PDf docuemnts have been collected using the \textit{collectstatic} functionality of Django. 
+The \textit{main.js} file in the JavaScript folder under static holds the Vue file. 
+At first my aim was to integrate a separate Vue.js with components and all, but rather it proved to be unfruitful to try to route the django engine to a separate vue app. 
+Sometimes the static files wouldn't load or a blank page would be presented. 
+Hence I strategized by directing a static Vue file inside Django itself. 
 \textbf{Website} is the project folder, and houses the setting, url and views file; although they would be found empty, since the website has been redirected to the homepage app of the project. 
 The \textit{settings file} will provide information on the database that has been set up and some other dependencies. 
 An important feature of the project is that it has been \textit{dockerized}, so just prepare \textit{docker engine} and \textit{docker compose} and fire up the \textbf{Dockerfile} to run the website regardless of the requirements. 
