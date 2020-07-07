@@ -21,7 +21,7 @@
 
 \begin{flushright}
 	\Huge{\textbf{Online Resume}} \\
-	\Large{Using Django and Vue.js} \\
+	\Large{Using Django, Vue.js and MongoDB} \\
 	\emph{\large{\today}} \\
 \end{flushright}
 
@@ -35,20 +35,49 @@
 	{\rule{475pt}{1pt}}
 \end{center}
 	
-\begin{center}
-	Amazon Web Service: \href{http://ec2-52-23-221-163.compute-1.amazonaws.com:5000/}{http://ec2-52-23-221-163.compute-1.amazonaws.com:5000/} \\
-	Heroku: \\
-\end{center}
+\begin{flushright}
+	Hosted at: \href{http://ec2-52-23-221-163.compute-1.amazonaws.com:5000/}{Amazon Web Service} \\
+	Source Code: \href{'https://github.com/Bill-Klay/Online-Resume}{Git Hub} \\
+	% Heroku: \\
+\end{flushright}
 
 \section{Introduction}
-This report was establish for the purpose of deployment of an online website implemented using \href{https://www.djangoproject.com/}{Django} as the backend engine and \href{https://vuejs.org/}{Vue.js} as the frontend for manipulating the DOM basically.
+This report was establish for the purpose of deployment of an online website implemented using \href{https://www.djangoproject.com/}{Django} as the backend engine and \href{https://vuejs.org/}{Vue.js} as the frontend for manipulating the DOM plus \textbf{MongoDB} for the database.
 The report discusses the layout of the project folder and describes the content held within.
 Overviewing and bit about which file implements what and how.
 The \textbf{links} stated at the start of the documents links to some of the important aspects of the task.
 \textit{Amazon Web Service} holds the code made live running on a virtual machine.
-\textit{Heroku} has the django app deployed on a Python droplet.
+% \textit{Heroku} has the django app deployed on a Python dyno. 
 Please visit my \textit{Git Hub} for viewing and inspecting the complete code.
+\textit{Please consult this report inplace for the read.me file; writing this in markdown is a task for another day.}
 
 \section{File Structure}
-This 
+The repository contains 2 folders mainly
+\begin{enumerate}
+	\item website-project
+	\item Documentation
+\end{enumerate}
+In the order of alphabetic listing each folder has been described. 
+\textbf{Blog} folder is an app created within the Django app, it holds the model implementation for Django ORM for a blogs page which has been left for future implementation. 
+Like wise the \textbf{homepage} foler is app and model implementation for the landing page and deals with communicating with the \textbf{MongoDB} port running at the back. 
+You'll find the database model here as well. 
+It also holds the \textit{index.html} file within the \textbf{templates} folder which served for the purpose of displaying the home or the landing page of the single page application. 
+\textbf{Media} is the folder for the Django ORM to store files and database structure for accessability, currently it only holds images, hence just a sinel \textbf{images} folder within. 
+\textbf{Static} folder the location for Django to serve static files from. 
+CSS, JavaScript, images and PDf docuemnts have been collected using the \textit{collectstatic} functionality of Django. 
+\textbf{Website} is the project folder, and houses the setting, url and views file; although they would be found empty, since the website has been redirected to the homepage app of the project. 
+The \textit{settings file} will provide information on the database that has been set up and some other dependencies. 
+An important feature of the project is that it has been \textit{dockerized}, so just prepare \textit{docker engine} and \textit{docker compose} and fire up the \textbf{Dockerfile} to run the website regardless of the requirements. 
+Speaking of requirements, \textbf{requirements.txt} is the file created from the python virtual environment and holds the python required to run the django server. \par
+\textbf{Documentation} folder houses this report and couple other \LaTeX\ dependencies.
+
+\section{Deployment}
+For the purpose of hosting this single page application I've utilized my \textbf{Amazon Web Service}, reason because this are familar to me and already a couple other applications are up and running on the platform. 
+The project has been dockerized and contained using docker and uploaded to my git hub. 
+From there an \textit{EC2} instance was deployed running a Ubuntu system. 
+Docker was then installed on the virtual machine and the project's git repository cloned. 
+After that it was just \textit{docker-compose build and up}. \par
+An effort was also made to host the application on \textbf{Heroku}, but unlike before I was having a static file problem which I'm currently debugging.
+
 \end{document}
+
